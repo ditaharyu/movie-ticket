@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// color palette from https://colorhunt.co/palette/1926553876bfe1aa74f3f0ca
+$color-navy: #192655;
+$color-blue: #3876BF;
+$color-orange: #E1AA74;
+$color-beige: #F3F0CA;
+
+// basic color
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #c0c0c0;
+$color-gray-500: #777777;
+
+#app{
+  font-size: 14px;
+}
+.header-block{
+  background-color: $color-orange;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: .75rem 1rem;
+}
+.footer-block{
+  background-color: $color-orange;
+}
+.movie-list{
+  background-color: $color-navy;
+}
+.btn{
+  &--search{
+    padding: 0.5rem 1rem;
+    background-color: $color-orange;
+    color: #ffffff;
+  }
+
+  &--back{
+    padding: 0.5rem 1rem;
+    background-color: $color-blue;
+    color: #ffffff;
+  }
+
+  &--book{
+    padding: 0.5rem 1rem;
+    background-color: $color-orange;
+    color: #ffffff;
+  }
+
+  &--sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 10px;
+    padding: 0.5rem 1rem;
+    background-color: $color-orange;
+    color: #ffffff;
+  }
+}
+
+.search-movie{
+  padding: 0.5rem;
+}
+
+.box-movie{
+  // border: 2px solid $color-gray;
+  &:hover{
+    border: 2px solid $color-blue;
+    // box-shadow: 3px 4px 6px -1px rgba(166,166,166,0.74);
+    // -webkit-box-shadow: 3px 4px 6px -1px rgba(166,166,166,0.74);
+    // -moz-box-shadow: 3px 4px 6px -1px rgba(166,166,166,0.74);
+  }
+
+  .text-title{
+    font-size: 12px;
+  }
+}
+
+.img{
+  &--home{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  &--detail{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  &--history{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  &--center{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.detail{
+  &--title{
+    font-size: 20px;
+  }
+}
