@@ -68,7 +68,7 @@ async function getDetailById(id: string) {
     detailMovie.value = response.data
   })
   .catch(error => {
-    console.log(error);
+    console.error(error)
   })
 }
 
